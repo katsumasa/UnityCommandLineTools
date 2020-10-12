@@ -60,7 +60,8 @@ namespace UTJ.UnityCommandLineTools
             mEditorPath = Path.GetDirectoryName(EditorApplication.applicationPath);            
             mToolsPath = Path.Combine(mEditorPath, @"Data/Tools");
             this.mExecFname = mExecFname;
-            var files = Directory.GetFiles(mToolsPath, mExecFname, SearchOption.AllDirectories);
+            //var files = Directory.GetFiles(mToolsPath, mExecFname, SearchOption.AllDirectories);
+            var files = Directory.GetFiles(mEditorPath, mExecFname+"*", SearchOption.AllDirectories);
             mExecFullPath = files[0];
         }
 
