@@ -9,7 +9,7 @@ public class WebExtractExecWindow : EditorWindow
 {
     static class Styles
     {
-        public static GUIContent Src = new GUIContent("binary", "binary file");
+        public static GUIContent Src = new GUIContent("Open Binary", "binary file");
         public static readonly GUIContent SaveContents = new GUIContent((Texture2D)EditorGUIUtility.Load("d_OpenedFolder Icon"), "Set Save Location");
     }
 
