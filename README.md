@@ -11,3 +11,5 @@ UnityEditorに同梱されている各種コマンドラインツールをスク
 - WebExtract
 - binary2text
 - diff
+- mcs
+- pdb2mdp
