@@ -26,7 +26,7 @@ public class Binary2TextExecWindow : EditorWindow
     [SerializeField] bool mIsHexfloat;
 
 
-    [MenuItem("Window/UnityCommanLineTools/Binary2Text")]
+    [MenuItem("Window/UTJ/UnityCommanLineTools/Binary2Text")]
     static void Init()
     {
         var window = (Binary2TextExecWindow)EditorWindow.GetWindow(typeof(Binary2TextExecWindow));

@@ -14,7 +14,7 @@ public class WebExtractExecWindow : EditorWindow
     }
 
     [SerializeField] string mBinaryFilePath = "";
-    [MenuItem("Window/UnityCommanLineTools/WebExtractExec")]
+    [MenuItem("Window/UTJ/UnityCommanLineTools/WebExtractExec")]
     static void Init()
     {
         var window = (WebExtractExecWindow)EditorWindow.GetWindow(typeof(WebExtractExecWindow));
