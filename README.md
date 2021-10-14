@@ -1,7 +1,7 @@
 # UnityCommandLineTools
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/katsumasa/UnityCommandLineTools)
 
-UnityのCommandLineToolをスクリプトから実行する
+Unityに同梱されているCommandLineToolをスクリプトから制御する
 
 ## 概要
 
