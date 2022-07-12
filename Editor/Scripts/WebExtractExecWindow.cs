@@ -9,7 +9,7 @@ public class WebExtractExecWindow : EditorWindow
 {
     static class Styles
     {
-        public static GUIContent Src = new GUIContent("Open Binary", "binary file");
+        public static GUIContent Src = new GUIContent("Open Binary", "open binary file");
         public static readonly GUIContent SaveContents = new GUIContent((Texture2D)EditorGUIUtility.Load("d_OpenedFolder Icon"), "Set Save Location");
     }
 
@@ -29,13 +29,13 @@ public class WebExtractExecWindow : EditorWindow
             GUIContent content;
             Vector2 contentSize;
 
-            contentSize = EditorStyles.label.CalcSize(Styles.SaveContents);
-            if (GUILayout.Button(Styles.SaveContents, GUILayout.MaxWidth(contentSize.x + 10)))
+            contentSize = EditorStyles.label.CalcSize(Styles.Src);
+            if (GUILayout.Button(Styles.Src, GUILayout.MaxWidth(contentSize.x + 10)))
             {
                 mBinaryFilePath = EditorUtility.OpenFilePanel("Select binary file", "", "");
             }
-            contentSize = EditorStyles.label.CalcSize(Styles.Src);
-            EditorGUILayout.LabelField(Styles.Src, GUILayout.MaxWidth(contentSize.x + 10));
+            //contentSize = EditorStyles.label.CalcSize(Styles.Src);
+            //EditorGUILayout.LabelField(Styles.Src, GUILayout.MaxWidth(contentSize.x + 10));
             content = new GUIContent(mBinaryFilePath);
             contentSize = EditorStyles.label.CalcSize(content);
             EditorGUILayout.LabelField(new GUIContent(mBinaryFilePath), GUILayout.Width(contentSize.x + 10));

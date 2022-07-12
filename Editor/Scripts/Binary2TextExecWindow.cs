@@ -42,12 +42,12 @@ public class Binary2TextExecWindow : EditorWindow
             GUIContent content;
             Vector2 contentSize;
             
-            contentSize = EditorStyles.label.CalcSize(Styles.SaveContents);
-            if(GUILayout.Button(Styles.SaveContents, GUILayout.MaxWidth(contentSize.x + 10))){
+            contentSize = EditorStyles.label.CalcSize(Styles.Src);
+            if(GUILayout.Button(Styles.Src, GUILayout.MaxWidth(contentSize.x + 10))){
                 mBinaryFilePath = EditorUtility.OpenFilePanel("Select binary file", "", "");
             }
-            contentSize = EditorStyles.label.CalcSize(Styles.Src);
-            EditorGUILayout.LabelField(Styles.Src, GUILayout.MaxWidth(contentSize.x + 10));
+            //contentSize = EditorStyles.label.CalcSize(Styles.Src);
+            //EditorGUILayout.LabelField(Styles.Src, GUILayout.MaxWidth(contentSize.x + 10));
             content = new GUIContent(mBinaryFilePath);
             contentSize = EditorStyles.label.CalcSize(content);
             EditorGUILayout.LabelField(new GUIContent(mBinaryFilePath), GUILayout.Width(contentSize.x + 10));
@@ -60,8 +60,8 @@ public class Binary2TextExecWindow : EditorWindow
             GUIContent content;
             Vector2 contentSize;
             
-            contentSize = EditorStyles.label.CalcSize(Styles.SaveContents);
-            if (GUILayout.Button(Styles.SaveContents, GUILayout.MaxWidth(contentSize.x + 10)))
+            contentSize = EditorStyles.label.CalcSize(Styles.Dest);
+            if (GUILayout.Button(Styles.Dest, GUILayout.MaxWidth(contentSize.x + 10)))
             {
                 string defaultName = "";
                 if(string.IsNullOrEmpty(mBinaryFilePath) == false)
@@ -76,8 +76,8 @@ public class Binary2TextExecWindow : EditorWindow
                     defaultName,
                     "txt");
             }
-            contentSize = EditorStyles.label.CalcSize(Styles.Src);
-            EditorGUILayout.LabelField(Styles.Dest, GUILayout.MaxWidth(contentSize.x + 10));
+            //contentSize = EditorStyles.label.CalcSize(Styles.Src);
+            //EditorGUILayout.LabelField(Styles.Dest, GUILayout.MaxWidth(contentSize.x + 10));
             content = new GUIContent(mTextFilePath);
             contentSize = EditorStyles.label.CalcSize(content);
             EditorGUILayout.LabelField(new GUIContent(mTextFilePath), GUILayout.Width(contentSize.x + 10));         
