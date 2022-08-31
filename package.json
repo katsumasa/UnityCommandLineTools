@@ -1,6 +1,6 @@
 {
   "name": "com.utj.unitycommandlinetools",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "displayName": "UnityCommandLineTools",
   "description": "UnityCommandLineTools is a package to control the command line tools included in Unity.",
   "unity": "2018.1",
