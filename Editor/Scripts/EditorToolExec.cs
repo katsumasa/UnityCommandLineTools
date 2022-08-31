@@ -83,6 +83,7 @@ namespace UTJ.UnityCommandLineTools
                     process.StartInfo.Arguments = arg;
                     process.StartInfo.UseShellExecute = false;
                     process.StartInfo.RedirectStandardOutput = true;
+                    process.StartInfo.CreateNoWindow = true;
                     process.Start();
                     mOutput = process.StandardOutput.ReadToEnd();
                     process.WaitForExit();
