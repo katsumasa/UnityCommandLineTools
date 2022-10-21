@@ -5,8 +5,8 @@ Unityに同梱されているCommandLineToolをスクリプトから制御する
 
 ## 概要
 
-UnityEditorに同梱されている各種コマンドラインツールをスクリプト内から実行することが出来ます。
-サンプルとしてEditor拡張を用意しています。
+UnityEditorに同梱されている各種コマンドラインツールをスクリプト内から実行する為のパッケージです。
+
 
 ## 対応済みTools
 
@@ -16,12 +16,18 @@ UnityEditorに同梱されている各種コマンドラインツールをスク
 - mcs
 - pdb2mdp
 
-## Sampleを使ってAssetBundeの中身を確認してみよう！
+## インストール
+
+1. Window > Package ManagerでPackage Managerを開く
+2. Package Manager左上の+のプルダウンメニューからAdd package form git URL...を選択する
+3. ダイアログへ`https://github.com/katsumasa/UnityCommandLineTools.git`を設定し、Addボタンを押す
+
+## 使い方
 
 AssetBunldeの中身を確認する為には、大まかに下記の手順となります。
 
 1. AssetBunldを展開(WebExtract)
-2. バイナリファイルを人間が読めるTextファイルへ変換する(binarry2text)
+2. バイナリファイルを人間が読めるTextファイルへ変換する(binary2text)
 
 ### AssetBundleを展開する
 
@@ -53,6 +59,8 @@ ClassIDに関しては[こちら](https://docs.unity3d.com/ja/current/Manual/Cla
 また、[こちら](https://support.unity.com/hc/en-us/articles/217123266-How-do-I-determine-what-is-in-my-Scene-bundle-)の記事がテキストファイルの内容の理解を助けます。
 
 
+## その他
 
-以上です。
+不具合・要望に関してはIssuesからお問い合わせ下さい、対応の約束は出来かねますが可能であれば対応致します。
 
+以上
